@@ -1,0 +1,30 @@
+<ion-header class="ion-no-border" [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/inicio" text=""></ion-back-button>
+    </ion-buttons>
+    <ion-title class="fuente">Historial</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large" class="titulo">Historial</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <div class="contenedor">
+    <img src="/assets/estudiando.png" alt="" class="imagen">
+  </div>
+  <div>
+    <ion-card>
+      <ion-card-content>
+        <ion-list>
+          <ion-item *ngFor="let qr of datosQr; let indexArray = index">
+            <ion-label>{{qr.seccion}}</ion-label>    
+          </ion-item>
+        </ion-list>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>

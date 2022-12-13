@@ -1,0 +1,45 @@
+ion-header::after {
+    background-image: none;
+}
+.contenedor{
+    text-align: center;
+    align-items: center;
+    border-radius: 100px;
+    padding-top: 10%;
+}
+.titulo{
+    text-align: center;
+}
+.hoy{
+    color: rgb(231, 231, 231);
+    font-family: 'Arimo', sans-serif;
+    font-weight: bold;
+}
+.icono{
+    max-width: 15px;
+}
+.tarjeta{
+    border-radius: 15px;
+    background-color: rgb(72, 113, 248);
+    color: rgb(231, 231, 231);
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Arimo', sans-serif;
+}
+.imagen{
+    max-width: 210px;
+    border-radius: 10px;
+}
+.logotipo{
+    max-width: 150px;
+}
+.toolbar{
+    text-align: center;
+}
+.btnScan{
+    --background: #0400E3;
+    --background-hover: #2826bd;
+}
+.fuente{
+    font-family: 'Arimo', sans-serif;
+}

@@ -1,0 +1,22 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar class="toolbar">
+    <img src="/assets/logo4.png" alt="" class="logotipo">
+    <ion-button (click)="Salir()" shape="round" class="boton"><ion-icon name="exit"></ion-icon></ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card routerLink="/secciones">
+    <div class="contenedor">
+      <h1 class="fuente">Generar Codigo</h1>
+      <img src="/assets/qr.png" alt="" class="imagen">
+    </div>
+  </ion-card>
+  <br>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle class="subtitulo">{{this.rol}}</ion-card-subtitle>
+      <ion-card-title>{{this.nombre +" "+ this.apellido}}</ion-card-title>
+    </ion-card-header>
+  </ion-card>
+</ion-content>

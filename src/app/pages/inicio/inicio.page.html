@@ -1,0 +1,40 @@
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Arimo:wght@500&family=Ubuntu&display=swap');
+</style> 
+
+<ion-header class="ion-no-border">
+  <ion-toolbar class="toolbar">
+    <img src="/assets/logo4.png" alt="" class="logotipo">
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <div class="contenedor">
+    <img src="/assets/qr.png" alt="" class="imagen">
+    <h1 class="fuente">Escanear</h1>
+  </div>
+
+  <ion-card class="tarjeta">
+    <p>Presiona el boton </p>
+    <p>de escanear abajo ⬇️</p>
+  </ion-card>
+
+  <ion-tabs>
+    <ion-tab-bar slot="bottom">
+      <ion-tab-button routerLink="/historial">
+        <ion-icon name="time"></ion-icon>
+      </ion-tab-button>
+      <ion-tab-button (click)="mostrarMenu()">
+        <ion-icon name="menu"></ion-icon>
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
+
+  <ion-fab vertical="bottom" horizontal="center" slot="fixed">
+    <ion-fab-button  class="btnScan" (click)="escanearQr()">
+      <ion-icon name="qr-code-outline"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+</ion-content>

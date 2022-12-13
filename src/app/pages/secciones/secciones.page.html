@@ -1,0 +1,49 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/inicio-profe" text=""></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <h1 class="titulo">Generar Asistencia</h1>
+
+  <div>
+    <ion-item>
+      <ion-label>Seccion</ion-label>
+      <ion-select placeholder="Seleccione una opcion" [(ngModel)]="clase.secc">
+        <ion-select-option value="PGY4121-007V">PGY4121-007V</ion-select-option>
+        <ion-select-option value="PGY4121-008V">PGY4121-008V</ion-select-option>
+        <ion-select-option value="PGY4121-009V">PGY4121-009V</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+
+    <ion-item>
+      <ion-label>Fecha</ion-label>
+      <ion-datetime-button datetime="datetime"></ion-datetime-button>
+      <ion-modal [keepContentsMounted]="true">
+        <ng-template>
+          <ion-datetime id="datetime" [(ngModel)]="clase.fecha"></ion-datetime>
+        </ng-template>
+      </ion-modal>
+    </ion-item>
+
+    
+    <div class="container">
+      <ion-button (click)="generarQR()" shape="round" class="boton">
+        Generar Codigo
+      </ion-button>
+    </div>
+    
+    <ion-card class="tarjeta">
+      <qrcode 
+        [qrdata]="qrCodeString" 
+        [width]="256" 
+        [errorCorrectionLevel]="'M'">
+      </qrcode>
+    </ion-card>
+  </div>
+
+</ion-content>

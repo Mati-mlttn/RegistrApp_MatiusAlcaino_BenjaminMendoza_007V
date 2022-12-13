@@ -1,0 +1,27 @@
+.boton{
+    --background: #0400E3;
+    --background-hover: #2826bd;
+    padding-left: 30px;
+    position: absolute;
+    padding-bottom: 15px;
+}
+.logotipo{
+    max-width: 150px;
+}
+.toolbar{
+    text-align: center;
+}
+.fuente{
+    font-family: 'Arimo', sans-serif;
+    font-weight: bold;
+}
+.imagen{
+    max-width: 210px;
+    border-radius: 10px;
+}
+.contenedor{
+    text-align: center;
+    align-items: center;
+    border-radius: 100px;
+    padding-bottom: 5%;
+}

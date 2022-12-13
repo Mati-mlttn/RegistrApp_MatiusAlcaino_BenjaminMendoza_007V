@@ -1,0 +1,20 @@
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Arimo:wght@500&family=Ubuntu&display=swap');
+  </style> 
+
+<ion-app>
+    <ion-menu contentId="main" menuId="first" side="end" 	swipe-gesture="false">
+    <ion-content>
+      <ion-list>
+        <ion-list-header class="titulo1">Menu</ion-list-header>
+        <ion-menu-toggle *ngFor="let c of componentes">
+          <ion-item [routerLink]="c.redirecTo" detail=false lines="none" class="titulo">
+            <ion-icon [name]="c.icon" slot="start" color="primary"></ion-icon>
+            {{ c.name }}
+         </ion-item>
+        </ion-menu-toggle>
+     </ion-list>
+    </ion-content>
+  </ion-menu>
+  <ion-router-outlet id="main"></ion-router-outlet>
+</ion-app>

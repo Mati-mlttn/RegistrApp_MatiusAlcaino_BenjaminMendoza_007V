@@ -1,0 +1,47 @@
+
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+<!--BOTON ATRAS-->
+<ion-buttons slot="start">
+  <ion-back-button defaultHref="/" text=""></ion-back-button>
+</ion-buttons>
+<!--FIN BOTON ATRAS-->
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <h1 class="titulo">Iniciar Sesion</h1>
+
+
+  
+  <ion-card class="tarjeta">
+    <ion-card-header>
+      <img src="/assets/iniciar-sesion.png" alt="" class="img-perfil">
+    </ion-card-header>
+
+    <ion-card-content>
+      <form [formGroup]="formularioLogin" (keyup.enter)="Ingresar()">
+
+        <ion-item>
+          <ion-label position="floating" class="fuente"><ion-icon slot="start" name="mail-outline"></ion-icon> Correo</ion-label>
+          <ion-input type="text" formControlName="correo"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="floating" class="fuente"><ion-icon slot="start" name="key-outline"></ion-icon> Contraseña</ion-label>
+          <ion-input type="password" formControlName="password" maxlength="12"></ion-input>
+        </ion-item>
+      </form>
+      <br>
+      <ion-button (click)="Ingresar()" expand="block" fill="solid" shape="round" class="boton">
+        Ingresar
+      </ion-button>
+      <br>
+      <p class="font">Si no tienes cuenta registrate! 👇</p>
+      <ion-button [routerLink] ="['/registro']" fill="outline" shape="round" color="warning" class="fuente">Registrarse</ion-button>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+
+

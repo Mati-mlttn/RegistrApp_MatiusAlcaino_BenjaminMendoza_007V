@@ -1,0 +1,23 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/inicio" text=""></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle class="subtitulo">{{this.rol}}</ion-card-subtitle>
+      <ion-card-title>{{this.nombre +" "+ this.apellido}}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content class="tarjeta">
+      <img src="/assets/barcod.jpg" alt="" class="barcode">
+      <br>
+      <ion-button (click)="Salir()" shape="round" class="boton">
+        Cerrar Sesion
+      </ion-button>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

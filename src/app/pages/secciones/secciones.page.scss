@@ -1,0 +1,24 @@
+.boton{
+    text-transform: initial;
+    padding-inline-start: 7%;
+    padding-inline-end: 7%;
+    --background: #0400E3;
+    --background-hover: #2826bd;
+    font-family: 'Arimo', sans-serif;
+}
+.container{
+    align-items: center;
+    text-align: center;
+    padding-top: 50px;
+}
+.titulo{
+    font-family: 'Arimo', sans-serif;
+    font-weight: bold;
+    padding-top: 5px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+}
+.tarjeta{
+    text-align: center;
+    align-items: center;
+}

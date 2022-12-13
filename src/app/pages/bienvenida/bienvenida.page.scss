@@ -1,0 +1,41 @@
+ion-header{
+    position: absolute;
+    box-shadow: none;
+}
+ion-toolbar{
+    --ion-background-color: transparent;
+    opacity: 0;
+    box-shadow: none;
+}
+.boton{
+    text-transform: initial;
+    padding-inline-start: 7%;
+    padding-inline-end: 7%;
+    --background: #0400E3;
+    --background-hover: #2826bd;
+    font-family: 'Arimo', sans-serif;
+}
+ion-card{
+    --ion-background-color: transparent;
+    box-shadow: none;
+}
+.tarjeta{
+    align-items: center;
+    text-align: center;
+}
+.imagen{
+    max-width: 100px;
+    padding-top: 20%;
+}
+.subtitulo{
+    color: rgb(224, 174, 45);
+    font-weight: bold;
+    font-size: 14px;
+    font-family: 'Arimo', sans-serif;
+}
+.logotipo{
+    max-width: 180px;
+}
+.fuente{
+    font-family: 'Arimo', sans-serif;
+}
